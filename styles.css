@@ -22,6 +22,10 @@ body {
     cursor: pointer;
 }
 
+.hamburger{
+    display: block;
+    text-align: center;
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -110,5 +114,455 @@ nav {
 .feature-card p {
     color: #544837;
 }
+.validation{
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
+    gap: 100px;
+}
+.validation-content{
+    flex: 1;
+    padding-right: 50px;
+}
+.validation-content h2 {
+    font-size: 36px;
+    color: #2F281E;
+    margin-bottom: 20px;
+}
+
+.validation-content h5 {
+    font-size: 1.125rem;
+    color: #544837;
+    margin-bottom: 20px;
+}
+.validation-content h4{
+    font-size: 1.125rem;
+    color: #2F281E;
+    margin-bottom: 20px;
+}
+.validation-content p {
+    color: #544837;
+    margin-bottom: 30px;
+     font-size: 18px;
+}
+.validation-image {
+    flex: 1;
+}
+.validation-image img {
+    max-width: 100%
+}
+.manager {
+    padding: 50px 10%;
+}
+.manager-image{
+    top: -420px;
+    /* display: flex; */
+    margin-right: 60%;
+    float: left;
+}
+.manager-content{
+    margin-top: -420px;
+    flex: 1;
+    margin-right: -200px;
+    float: right;
+}
+.manager-content h5{
+    font-size: 1.125rem;
+    color: #544837;
+    margin-bottom: 20px;  
+}
+.manager-content h2{
+    font-size: 36px;
+    color: #2F281E;
+    margin-bottom: 20px;
+}
+.manager-group{
+    padding-left: 40px;
+}
+
+.manager-tick {
+    position: absolute;
+    margin-left: -50px;
+}
+.marketer{
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
+    gap: 100px;
+}
+.marketer-content{
+    flex: 1;
+    padding-right: 50px;
+}
+.marketer-content h2 {
+    font-size: 36px;
+    color: #2F281E;
+    margin-bottom: 20px;
+}
+
+.marketer-content h5 {
+    font-size: 1.125rem;
+    color: #544837;
+    margin-bottom: 20px;
+}
+.marketer-content h4{
+    font-size: 1.125rem;
+    color: #2F281E;
+    margin-bottom: 20px;
+}
+.marketer-content p {
+    color: #544837;
+    margin-bottom: 30px;
+     font-size: 18px;
+}
+.marketer-image {
+    flex: 1;
+}
+.marketer-image img {
+    max-width: 100%;
+}
+.pricing{
+    display: flex;
+    justify-content: center;
+    padding: 100px 10%;
+    gap: 100px;
+}
+.pricing-content h1{
+    font-size: 40px;
+    color: #2F281E;
+    margin-bottom: 20px;
+}
+.pricing-content p{
+    color: #544837;
+    margin-bottom: 30px;
+     font-size: 18px;
+}
+.pricing-btn{
+    background-color: #FF9900;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.marketing{
+    padding: 100px 10%;
+    gap: 100px;
+}
+.marketing-content h1{
+    font-size: 40px;
+    color: #2F281E;
+    margin-bottom: 20px;
+}
+.manager-content p{
+    color: #544837;
+    margin-bottom: 30px;
+     font-size: 20px;
+}
+.marketing-content{
+    display: flex;
+}
+.marketing-content-1 p{ 
+    color: #544837;
+    margin-bottom: 30px;
+     font-size: 20px;
+}
+b:hover{
+    color: #FF9900;
+    cursor: pointer;
+}
+.marketing-content-1-image img{ 
+    max-width: 100%;
+}
+footer {
+    padding: 100px 10%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-column h4 {
+    color: #2F281E;
+    margin-bottom: 10px;
+}
+
+.link-column a {
+    color: #544837;
+    text-decoration: none;
+}
+.form-column h4{
+    color: #2F281E;
+    margin-bottom: 10px;
+}
+.form-column input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    color: rgb(101, 197, 238);
+}
+.btn-2{
+    background-color: #FF9900;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.copyright{
+    padding-top: 10px;
+    font-size: 15px;
+}
+.owner{
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 5%;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 5%;
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .feature-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+
+    .validation,
+    .marketer {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 5%;
+    }
+
+    .validation-content,
+    .marketer-content {
+        padding-right: 0;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .marketing-content {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .manager-image,
+    .manager-content {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    nav {
+        padding: 15px 5%;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .feature-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .feature-card {
+        width: 45%;
+    }
+
+    .validation,
+    .marketer {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 5%;
+    }
+
+    .pricing {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        padding: 20px 8%;
+    }
+
+    .hero {
+        padding: 50px 8%;
+    }
+
+    .hero-content {
+        padding-right: 30px;
+    }
+
+    .feature-group {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .feature-card {
+        width: 45%;
+    }
+
+    .validation,
+    .marketer {
+        padding: 80px 8%;
+        gap: 50px;
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
