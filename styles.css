@@ -1,5 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     line-height: 1.5;
+    overflow-x: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .btn-2{
@@ -23,14 +32,26 @@ body {
 }
 
 .hamburger{
-    display: block;
+    display: none;
     text-align: center;
 }
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 15px 75px;
+    top: 0;
+    margin: 0 auto;
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    position: fixed;
+    background-color: linear-gradient(
+        180deg,
+        rgba(255, 254, 254, 0.15),
+        rgba(255, 254, 254, 0)
+    );
+    width: 100%;
+    max-width: 1440px;
 }
 .nav-links {
     display: flex;
@@ -49,10 +70,9 @@ nav {
     align-items: center;
     padding: 50px 10%;
 }
-
 .hero-content {
     flex: 1;
-    padding-right: 50px;
+    width: 50%;
 }
 
 .hero-content h1 {
@@ -77,12 +97,16 @@ nav {
 .feature {
     padding: 100px 10%;
     text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 10%;
 }
 
 .feature h2 {
     font-size: 36px;
     color: #2F281E;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .feature-group {
@@ -116,9 +140,9 @@ nav {
 }
 .validation{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 100px 10%;
-    gap: 100px;
+    padding: 50px 10%;
 }
 .validation-content{
     flex: 1;
@@ -152,19 +176,21 @@ nav {
     max-width: 100%
 }
 .manager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 50px 10%;
+    width: 1200px;
+}
+.manager-content{
+    flex: 1;
+    margin-right: -300px;
+    margin-left: 40px;
+    float: right;
 }
 .manager-image{
     top: -420px;
-    /* display: flex; */
-    margin-right: 60%;
     float: left;
-}
-.manager-content{
-    margin-top: -420px;
-    flex: 1;
-    margin-right: -200px;
-    float: right;
 }
 .manager-content h5{
     font-size: 1.125rem;
@@ -179,16 +205,15 @@ nav {
 .manager-group{
     padding-left: 40px;
 }
-
-.manager-tick {
+.manager-tick{
     position: absolute;
     margin-left: -50px;
 }
 .marketer{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding: 100px 10%;
-    gap: 100px;
+    padding: 50px 10%;
 }
 .marketer-content{
     flex: 1;
@@ -199,8 +224,7 @@ nav {
     color: #2F281E;
     margin-bottom: 20px;
 }
-
-.marketer-content h5 {
+.marketer-content h5{
     font-size: 1.125rem;
     color: #544837;
     margin-bottom: 20px;
@@ -480,7 +504,6 @@ footer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
-
 
 
 
